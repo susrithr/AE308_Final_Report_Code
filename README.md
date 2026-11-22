@@ -1,4 +1,4 @@
-# AE308_Final_Report_Code
+# AE308 Final Report Code
 # Non-Collocated Angular Positioning of a Torsion Disc
 
 **Course Project | Control Systems and System Modelling | Group 18**
