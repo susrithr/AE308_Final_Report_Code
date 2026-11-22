@@ -1,38 +1,43 @@
-# Non-Collocated Angular Positioning of a Torsion Disc
+GROUP 18 — CONTROL SYSTEMS PROJECT
+===================================
 
-**Course Project | Control Systems and System Modelling | Group 18**
+Archive contents
+----------------
+matlab/run_all.m
+    Single top-level MATLAB script for generating the project figures and
+    numerical results.
 
-## Overview
-This project focuses on modelling, stability analysis, and controller design for a non-collocated angular positioning system involving a torsion disc using MATLAB.
+How to run
+----------
+1. Extract the archive while preserving the folder structure.
+2. Open MATLAB.
+3. Set the Current Folder to the extracted archive's root folder.
+4. Run:
+       run('matlab/run_all.m')
 
-## Controllers Implemented
-- Proportional (P) Controller
-- Ideal PID Controller
-- Lead Compensator
+Generated outputs
+-----------------
+The script creates the following outputs beside the matlab folder:
 
-## Analysis
-- Pole-Zero and Root Locus Analysis
-- Bode and Nyquist Plots
-- Closed-Loop Stability Analysis
-- Step and Impulse Responses
-- Controller Performance Comparison
+    results.txt
+    figs/*.pdf
 
-## Tools Used
-- MATLAB
-- Control System Toolbox
+All plot titles include the group number, which is set once near the
+beginning of matlab/run_all.m:
 
-## How to Run
-1. Open MATLAB.
-2. Navigate to the repository folder.
-3. Run `matlab/run all.m`.
+    groupNo = 18;
 
-The script generates PDF plots in the `figs/` folder and numerical results in `results.txt`.
+Change that value if the group number needs to be updated.
 
-## Repository Structure
-```text
-├── matlab/
-│   └── run all.m
-├── figs/
-├── docs/
-└── README.md
-```
+Requirements
+------------
+MATLAB with Control System Toolbox.
+
+Notes
+-----
+The actuator saturation limit in Section 8 is illustrative and normalized
+(plus/minus 1). Replace it with the actual actuator limit if one is specified
+by the project.
+
+The Nyquist plot is zoomed around the critical point (-1, 0) for visibility.
+This changes only the displayed axis limits, not the computed response.
