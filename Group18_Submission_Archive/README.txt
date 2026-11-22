@@ -36,5 +36,3 @@ The script generates PDF plots in the `figs/` folder and numerical results in `r
 ├── docs/
 └── README.md
 ```
-
-**Group 18 | IIT Bombay**
